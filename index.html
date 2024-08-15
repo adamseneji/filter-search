@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/63853fee5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <title>DEV GURUS</title>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <header>
+      <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-custom">DEV GURUS</a>
+          <input type="text" id="searchInput" placeholder="Search...">
+        </div>
+      </nav>
+    </header>
+
+    <div  id="container">
+      <div data-content="ruby" class="card">
+        <h3 id="title" class="title">using of version control</h3>
+        <p id="description" class="description">
+                    
+            $ git init<br />
+            $ git add .<br />
+            $ git commit -m "Initial commit"<br />
+            $ git branch feature-branch<br />
+            $ git checkout feature-branch
+        </p>
+        <h1 id="lang" class="lang">Ruby</h1>
+      </div>
+      <div data-content="javascript" class="card">
+        <h3 id="title" class="title">using "console" to Display Arrays and Objects</h3>
+        <p id="description" class="description">
+          const myObj = {<br />
+          name: 'Kolade',<br />
+          luckyNum: 10,<br />
+          lovesFootball: true,<br />
+          };<br />
+
+          console.log(myObj);<br />
+          console.table(myObj);<br />
+        </p>
+        <h1 id="lang" class="lang">JavaScript</h1>
+      </div>
+      <div data-content="ruby" class="card">
+        <h3 id="title" class="title"> Write tests:</h3>
+        <p id="description" class="description">
+          require 'rspec'<br />
+
+            def add_numbers(a, b)<br />
+              a + b<br />
+            end<br />
+
+            describe "#add_numbers" do<br />
+              it "adds two numbers together" do<br />
+                expect(add_numbers(2, 3)).to eq(5)<br />
+              end<br />
+            end
+        </p>
+        <h1 id="lang" class="lang">Ruby</h1>
+      </div>
+      <div data-content="javascript" class="card">
+        <h3 id="title" class="title">Use the filter() Method to Filter Through Arrays</h3>
+        <p id="description" class="description">
+          const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];<br />
+
+          const oddNums = nums.filter((num) => num % 2 !== 0);<br />
+          const evenNumbers = nums.filter((num) => num % 2 === 0);<br />
+
+          console.log(evenNumbers); // [2, 4, 6, 8, 10, 12, 14]<br />
+          console.log(oddNums); // [1, 3, 5, 7, 9, 11, 13, 15]<br />
+        </p>
+        <h1 id="lang" class="lang">JavaScript</h1>
+      </div>
+      <div data-content="go" class="card">
+        <h3 id="title" class="title">Declare And Initialize A Variable In One Line</h3>
+          <p id="description" class="description">
+            // Long form<br />
+            var message string<br />
+            message = "Hello, Golang!"<br />
+            
+            // Shorthand<br />
+            message := "Hello, Golang!"<br />
+        </p>
+        <h1 id="lang" class="lang">Go</h1>
+      </div>
+      <div data-content="java" class="card">
+        <h3 id="title" class="title">Example of Generic</h3>
+        <p id="description" class="description">
+          List<String> names = new ArrayList<>();<br>
+
+            names.add("John");<br>
+            
+            names.add("Jane");<br>
+            
+            String firstName = names.get(0);
+        </p>
+        <h1 id="lang" class="lang">Java</h1>
+      </div>
+      <div data-content="python" class="card">
+        <h3 id="title" class="title">using itertools library</h3>
+        <p id="description" class="description">
+          import itertools<br />
+          numbers = [1,2,3,4,5]<br />
+          product = list(itertools.product(numbers, repeat=2))<br />
+          print(product)
+        </p>
+        <h1 id="lang" class="lang">Python</h1>
+      </div>
+      <div data-content="python" class="card">
+        <h3 id="title" class="title">using list comprehensions</h3>
+        <p id="description" class="description">
+          def square_numbers(numbers):<br />
+          """Return a list
+        </p>
+        <h1 id="lang" class="lang">Python</h1>
+      </div>
+      <div data-content="cplus" class="card">
+        <h3 class="title">Using Bitwise Operation</h3>
+        <p class="description">
+          if(num & 1)<br />
+          {<br />
+              cout<<"Number is odd"<<endl;<br />
+          }<br />
+          else<br />
+          {<br />
+              cout<<"Number is even"<<endl;<br />
+          }
+          
+        </p>
+        <h1 class="lang">C++</h1>
+      </div>
+      <div data-content="java" class="card">
+        <h3 class="title">Use StringBuilder</h3>
+        <p class="description">
+          StringBuilder message = new StringBuilder("Hello");<br>
+
+          message.append(" World");<br>
+          
+          message.insert(5, " Java");<br>
+          
+          String result = message.toString();
+        </p>
+        <h1 id="lang" class="lang">Java</h1>
+      </div>
+      <div data-content="go" class="card">
+        <h3 id="title" class="title">Swap Values Between Variables</h3>
+          <p id="description" class="description">
+            a, b := 1, 2<br />
+
+            // Long form<br />
+            temp := a<br />
+            a = b<br />
+            b = temp<br />
+            
+            // Shorthand<br />
+            a, b = b, a<br />
+        </p>
+        <h1 id="lang" class="lang">Go</h1>
+      </div>
+      <div data-content="cplus" class="card">
+        <h3 id="title" class="title">Use Conditional/Ternary Operator</h3>
+        <p id="description" class="description">
+          b = ( a ? x : y  ) ==> if a is true then b = x else b = y<br>
+          if(a)<br />
+          {<br />
+              b=x;<br />
+          }<br />
+          else<br />
+          {<br />
+              b=y;<br />
+          }
+        </p>
+        <h1 id="lang" class="lang">C++</h1>
+      </div>
+    
+  </body>
+</html>
