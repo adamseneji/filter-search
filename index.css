@@ -136,7 +136,7 @@ body {
     padding: 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: scroll;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
   }
@@ -196,7 +196,7 @@ body {
 }
 
 /* xlg */
-@media (min-width: 896px) {
+@media (orientation: landscape) {
   /* Card Container */
   #container {
     display: flex;
